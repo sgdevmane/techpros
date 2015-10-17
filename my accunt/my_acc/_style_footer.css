@@ -1,0 +1,52 @@
+#footer-sec {
+		color: #a3dbfe;
+		background-color:#013354;
+
+	}
+#footer-sec .container-fluid{
+padding-left: 45px;
+padding-right: 45px;
+
+}
+#footer-sec a{
+	color: #a3dbfe;
+}
+#footer-sec h4 {
+	text-transform:uppercase;
+	color: #fff;
+	
+	}
+#footer-sec ul{
+padding-left:0;
+}
+#footer-sec .footer-right-side{
+text-align:right;
+}
+#footer-sec .footer-right-side .footer-video-frame{
+margin-top:11px;
+}
+#footer-sec button{
+background-color:#A3DBFF;
+}
+#footer-sec input{
+background-color:#014572;
+}
+
+#footer-sec .fa{
+font-size:25px;
+}
+#footer-sec .fa-facebook{
+color:#4569E4;
+}
+#footer-sec .fa-twitter{
+color:#42C0FB;
+}
+#footer-sec .fa-envelope{
+color:#FFFFFF;
+}
+#footer-sec .fa-google-plus{
+color:#DA4C36;
+}
+.pad-bottom {
+		padding-bottom:5px;
+	}

@@ -1,0 +1,81 @@
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="../../js/bootstrap-hover-dropdown.js"></script>
+<script>
+$(document).ready(function() {
+$('[data-toggle=offcanvas]').click(function() {
+$('.row-offcanvas').toggleClass('active');
+});
+
+
+//animated header
+$(window).scroll(function(){
+//alert($(window).scrollTop());
+var top = $(this).scrollTop();
+if (top > 85) {
+        $(".nav-with-header").addClass("main-page-collapse");
+        $(".header").addClass("header-during-scrolling");
+		
+    } else {
+       $(".nav-with-header").removeClass("main-page-collapse");
+        $(".header").removeClass("header-during-scrolling");
+    }
+
+});
+
+var header_height=$(".header").height();
+$("body").css("padding-top",header_height);
+
+if($(window).width()<720){
+		
+		$(".content").addClass("content-back-padding");
+		}
+$(window).resize(function(){
+        var header_height=$(".header").height();
+		$("body").css("padding-top",header_height);
+		if($(window).width()<720){
+		
+		$(".content").addClass("content-back-padding");
+		}
+		else{
+		$(".content").removeClass("content-back-padding");
+		}
+		
+    });
+	var x = $(".content").offset();
+       // alert("Top: " + x.top + " Left: " + x.left + " Height:" + $("#img-logo-manipulate").height());
+	   
+	   
+//To check if a element has open and dropdown-block class then add it to a new class	   
+    
+	
+	/*$(".block-display-inline").hover(function(){
+       	  if($("li").hasClass("dropdown") && $("li").hasClass("block-display-inline") && $("li").hasClass("open")){
+			//$(".block-display").addClass("block-display-bock");
+	   }
+	   else {
+	    $(".block-display").removeClass("block-display-block");
+	   }
+    },
+    function(){
+		 $(".block-display").removeClass("block-display-block");
+		 }
+    );
+	*/
+
+ if($(window).width()>720){
+$(".block-display-inline").mouseenter(function(){
+	  if($("li").hasClass("dropdown") && $("li").hasClass("block-display-inline") && $("li").hasClass("open")){
+			$(".block-display").css("cssText", "display: block !important;");
+	   
+	   }
+	   });
+	   
+$(".block-display-inline").mouseleave(function(){
+			$(".block-display").css("cssText", "display: none !important;");
+	   });
+	   }
+	   
+	   });
+	      
+</script>

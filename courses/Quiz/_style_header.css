@@ -1,0 +1,95 @@
+.header{
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index:10	;
+  background-color:#013354;
+  margin-bottom:0;
+  padding-top:10px;
+-webkit-transition: all 0.50s ease-out;
+-moz-transition: all 0.50s ease-out;
+transition: all 0.50s ease-out;
+  }
+@media screen and (max-width: 768px) {
+ .header{
+	z-index:0; 
+ }
+ }
+.header  .container-fluid .row .col-md-12 .link-list > li{
+
+    border-right: 1px solid rgba(163, 219, 255, 1);
+    float: left;
+    vertical-align: middle;
+	color:#A3DBFF;
+}
+.header  .container-fluid .row .col-md-12 .link-list > li > a{
+    line-height: 23px;
+    padding: 0 10px;
+	color:#A3DBFF;
+	
+}
+.header  .container-fluid .row .col-md-12 .link-list .header-track-icon{
+ margin-right: 5px;
+}
+.header  .container-fluid .row .header-search-form{
+    background: -webkit-linear-gradient(top, rgba(195, 195, 195,0.3), rgba(255, 255, 255,0.3)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(top, rgba(195, 195, 195,0.3), rgba(255, 255, 255,0.3)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(to top, rgba(195, 195, 195,0.3), rgba(255, 255, 255,0.3)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to top, rgba(195, 195, 195,0.3), rgba(255, 255, 255,0.3)); /* Standard syntax (must be last) */
+}
+
+.header .search-bar-text-wrap{
+margin-top:20px;
+padding-right:23px;
+
+}
+.header  .search-bar-text-wrap .glyphicon.glyphicon-search{
+position:absolute;
+padding:7px;
+pointer-events:none;
+right:18px;
+font-size:22px;
+}
+.header  .search-bar-text-wrap input {
+padding-right :30px;
+z-index: 0;
+}
+.no-border{
+border: medium none !important;
+}
+
+.row-top-margin{
+margin-top:22px;
+}
+.row-down-margin{
+margin-bottom:22px;
+}
+ol, ul {
+    list-style: outside none none;
+}
+
+.cart{
+position:relative;
+}
+.header  .container-fluid .cart .header-cart-icon{   
+	font-size: 35px;
+	color: #A3DBFE;
+	cursor:pointer;
+}
+
+.header  .container-fluid .header-wishlist{
+
+margin-right:32%;
+}
+.header  .container-fluid .header-wishlist .dropdown >h4{
+color:#A3DBFE;
+cursor:pointer;
+}
+
+.header-during-scrolling{
+margin-top:-35px;
+
+}
+.header-during-scrolling .row-down-margin{
+margin-bottom:0;
+}
